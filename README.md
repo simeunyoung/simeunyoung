@@ -1,16 +1,30 @@
-## Hi there 👋
+## About Me
 
 <!--
-**simeunyoung/simeunyoung** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+---
 
-Here are some ideas to get you started:
+**🏫Education🏫**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+**🏅Certification🏅**
+
+**Tech Stack**
+
+**FrontEnd**
+
+**BackEnd**
+
+**Database**
+
+**DevOps**
+
+**Collaboration Tool**
+
+**Design**
+
+**Sub Language & Learning Language**
+
+---
+
+**GitHub Stat**
+
 -->
