@@ -71,18 +71,18 @@
 
 ## 🏗️ DAMDA 2.0 — IoT Platform MSA
 
-> 스마트홈 IoT 플랫폼을 AWS 기반 MSA 구조로 전면 재설계한 프로젝트 (상용화 운영 중)
+> 스마트홈 IoT 플랫폼을 AWS 기반 MSA 구조로 전면 재설계한 프로젝트
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 │                       DAMDA 2.0 Architecture                     │
 ├──────────────┬───────────────┬────────────────┬──────────────────┤
-│  OAuth2 서버 │      MM       │     FPN         │       EM        │
+│  OAuth2 서버 │  Membership    │     Push      │       Event      │
 │  JWT 중앙인증 │  회원 · 그룹   │ FCM 푸시알림    │   이벤트 엔진    │
 └──────────────┴───────────────┴────────────────┴──────────────────┘
                           ↕  AWS IoT Core / MQTT
 ┌──────────────────────────────────────────────────────────────────┐
-│                    DCM  ·  DSIM  ·  Lambda(×4)                   │
+│         DeviceContorol  ·  Data  ·  Lambda                       │
 │          디바이스 제어    IoT 데이터 수집   이벤트 라우팅 / OTA    │
 └──────────────────────────────────────────────────────────────────┘
          Java 17 · Spring Boot 3.2.5 · MariaDB (AWS RDS)
@@ -91,10 +91,10 @@
 | 모듈 | 핵심 구현 포인트 |
 |------|----------------|
 | **OAuth2 서버** | Spring Authorization Server · RSA JWK DB 영속화 · 기기 단위 로그아웃 · PKCE |
-| **MM** | SMS 인증(Aligo) · 그룹 초대 시스템 · MDC traceId 분산 로그 추적 |
-| **FPN** | FCM 토큰 자동 갱신/무효화 · WebClient 비동기 · UPSERT Native SQL |
-| **EM** | Quartz 스케줄러 · Spring Event 비동기 리팩토링 · 멀티 데이터소스 |
-| **DCM** | AWS IoT Core · MQTT/TLS · Saga 보상 트랜잭션 · OTA 펌웨어 업데이트 |
+| **Membership** | SMS 인증(Aligo) · 그룹 초대 시스템 · MDC traceId 분산 로그 추적 |
+| **Firebase Push** | Firebase 토큰 자동 갱신/무효화 · WebClient 비동기 · UPSERT Native SQL |
+| **Event** | Quartz 스케줄러 · Spring Event 비동기 리팩토링 · 멀티 데이터소스 |
+| **Device Control** | AWS IoT Core · MQTT/TLS · Saga 보상 트랜잭션 · OTA 펌웨어 업데이트 |
 | **Lambda** | MqttEventRouter 신규 개발 · OTA 상태 추적 UX 개선 |
 
 ---
@@ -108,17 +108,11 @@
 
 🔧  OAuth2 JWT 이중화 이슈
     Sticky Session 임시 해결 구조의 무중단 배포 불가 문제 인지
-    → JKS 파일 방식으로 전환, 전 모듈 배포 완료
+    → RSA 기반 JWK 영속성(DB 저장) 구조로 전환하여 Stateless 인증 및 이중화 안정성 확보
 
 🔧  OTA UX 개선 (Lambda)
     IN_PROGRESS 상태 DB 저장으로 앱 완료 표시 수 초 지연 문제
     → IN_PROGRESS 제거 + 상태 전이 가드 로직 추가로 해결
-
-🔧  FCM 푸시 미전송
-    조건식 =>, =< DB 데이터 불일치 원인 분석 후 수정
-
-🔧  glibc 보안취약점 (CVE-2024-2961, CVSS 7.3)
-    CentOS 7 EOS 이슈까지 포함해 패치 방안 도출 및 적용
 
 🔧  서버 파일시스템 과점유 93% → 46%
     고아 로그 원인 분석 후 logrotate 전 서버 표준화
