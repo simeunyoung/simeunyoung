@@ -16,9 +16,9 @@
 ```
 백엔드 개발과 인프라 운영을 함께 다루는 개발자입니다.
 
-현재 스마트홈 IoT 플랫폼 DAMDA 2.0을 AWS 기반 MSA 구조로 설계·개발·운영 중입니다.
-5개 Spring Boot 마이크로서비스와 4종 AWS Lambda를 직접 개발하고,
-서버 인프라 운영(systemd, logrotate, CloudWatch, API Gateway)까지 담당하고 있습니다.
+스마트홈 IoT 플랫폼 프로젝트에서
+인증 서버 · 알림 서비스 · 자동화 이벤트 엔진을 직접 설계 및 구현하였고
+디바이스 제어 모듈과 AWS 인프라는 인계받아 운영 개선을 주도했습니다.
 
 단순히 기능을 구현하는 것에서 나아가,
 시스템 전체의 흐름을 이해하고 서비스 품질을 함께 개선하는 것을 목표로 합니다.
@@ -56,8 +56,6 @@
 ![CloudFront](https://img.shields.io/badge/CloudFront-8C4FFF?style=flat-square&logo=amazonaws&logoColor=white)
 ![IAM](https://img.shields.io/badge/IAM-DD344C?style=flat-square&logo=amazonaws&logoColor=white)
 ![ALB](https://img.shields.io/badge/ALB-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![ACM](https://img.shields.io/badge/ACM-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-![STS](https://img.shields.io/badge/STS-DD344C?style=flat-square&logo=amazonaws&logoColor=white)
 ![EventBridge](https://img.shields.io/badge/EventBridge-FF4F8B?style=flat-square&logo=amazonaws&logoColor=white)
 
 **Infra & DevOps**
@@ -82,7 +80,7 @@
 └──────────────┴───────────────┴────────────────┴──────────────────┘
                           ↕  AWS IoT Core / MQTT
 ┌──────────────────────────────────────────────────────────────────┐
-│         DeviceContorol  ·  Data  ·  Lambda                       │
+│         DeviceControl  ·  Data  ·  Lambda                        │
 │          디바이스 제어    IoT 데이터 수집   이벤트 라우팅 / OTA    │
 └──────────────────────────────────────────────────────────────────┘
          Java 17 · Spring Boot 3.2.5 · MariaDB (AWS RDS)
@@ -91,32 +89,26 @@
 | 모듈 | 핵심 구현 포인트 |
 |------|----------------|
 | **OAuth2 서버** | Spring Authorization Server · RSA JWK DB 영속화 · 기기 단위 로그아웃 · PKCE |
-| **Membership** | SMS 인증(Aligo) · 그룹 초대 시스템 · MDC traceId 분산 로그 추적 |
+| **Membership** | SMS 인증 · 그룹 초대 시스템 · MDC traceId 분산 로그 추적 |
 | **Firebase Push** | Firebase 토큰 자동 갱신/무효화 · WebClient 비동기 · UPSERT Native SQL |
-| **Event** | Quartz 스케줄러 · Spring Event 비동기 리팩토링 · 멀티 데이터소스 |
+| **Event** | Quartz 스케줄러 · Spring ApplicationEvent 비동기 분리 · 멀티 데이터소스 |
 | **Device Control** | AWS IoT Core · MQTT/TLS · Saga 보상 트랜잭션 · OTA 펌웨어 업데이트 |
-| **Lambda** | MqttEventRouter 신규 개발 · OTA 상태 추적 UX 개선 |
+| **Lambda** | OTA 폴링 → MQTT 이벤트 드리븐 전환 · Lambda 역할 분리 |
 
 ---
 
 ## ⚡ Problem Solving Highlights
 
-```
-🔧  EC2 부팅 실패 분석
-    t2.large Xen 하이퍼바이저 CONSOLE_EVTCHN 오류 원인 추적
-    → t3(Nitro) 마이그레이션 권고로 근본 해결
+| 구분 | 요약 |
+|------|------|
+| EC2 부팅 실패 | Xen 하이퍼바이저 CONSOLE_EVTCHN 오류 → t3(Nitro) 마이그레이션 권고 |
+| OAuth2 JWT 이중화 | Sticky Session 구조의 한계 인지 → JWK DB 영속화로 무중단 배포 가능 구조 전환 |
+| OTA 상태 반영 지연 | EventBridge 폴링 구조 → MQTT 이벤트 드리븐으로 전환, 즉시 반영 |
+| CloudFront 캐시 미갱신 | 동일 파일명 교체 시 CDN 캐시 문제 → 타임스탬프 파일명 전략 적용 |
+| MariaDB JDBC 장애 | 버전업 후 prepared_stmt_count MAX 도달 → 파라미터 off 조치 |
+| 서버 파일시스템 과점유 | 고아 로그 원인 분석 → logrotate 전 서버 표준화 (93% → 46%) |
 
-🔧  OAuth2 JWT 이중화 이슈
-    Sticky Session 임시 해결 구조의 무중단 배포 불가 문제 인지
-    → RSA 기반 JWK 영속성(DB 저장) 구조로 전환하여 Stateless 인증 및 이중화 안정성 확보
-
-🔧  OTA UX 개선 (Lambda)
-    IN_PROGRESS 상태 DB 저장으로 앱 완료 표시 수 초 지연 문제
-    → IN_PROGRESS 제거 + 상태 전이 가드 로직 추가로 해결
-
-🔧  서버 파일시스템 과점유 93% → 46%
-    고아 로그 원인 분석 후 logrotate 전 서버 표준화
-```
+> 상세한 분석과 해결 과정은 **[Tech Notes](https://tech-notes-nu.vercel.app)** 에 기록하고 있습니다.
 
 ---
 
@@ -126,9 +118,7 @@
 
 [![Tech Blog](https://img.shields.io/badge/tech--notes--nu.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://tech-notes-nu.vercel.app)
 
-- Spring Boot / Backend 실무 트러블슈팅
-- Server / Infra / DevOps 운영 이슈 분석
-- AWS 운영 환경 설정 및 장애 대응 기록
+`spring-boot` `backend` `infra` `server` `troubleshooting` `git` `devops` `logging`
 
 ---
 
