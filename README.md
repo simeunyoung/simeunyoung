@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 안녕하세요, 심은영입니다
+# 안녕하세요, 심은영입니다
 
 ### Backend Developer · IoT Platform · AWS Cloud
 
@@ -11,7 +11,7 @@
 
 ---
 
-## 🙋‍♀️ About Me
+## About Me
 
 ```
 백엔드 개발과 인프라 운영을 함께 다루는 개발자입니다.
@@ -26,7 +26,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Backend**
 
@@ -67,7 +67,7 @@
 
 ---
 
-## 🏗️ DAMDA 2.0 — IoT Platform MSA
+## DAMDA 2.0 — IoT Platform MSA
 
 > 스마트홈 IoT 플랫폼을 AWS 기반 MSA 구조로 전면 재설계한 프로젝트
 
@@ -97,7 +97,7 @@
 
 ---
 
-## ⚡ Problem Solving Highlights
+## Problem Solving Highlights
 
 | 구분 | 요약 |
 |------|------|
@@ -112,7 +112,7 @@
 
 ---
 
-## 📝 Tech Notes
+## Tech Notes
 
 > 실무에서 겪은 문제 해결 과정과 시행착오를 기록하는 개발 블로그
 
@@ -122,7 +122,7 @@
 
 ---
 
-## 🏆 Certifications
+## Certifications
 
 | 자격증 | 취득일 | 발급기관 |
 |--------|--------|---------|
