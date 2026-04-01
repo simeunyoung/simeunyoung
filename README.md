@@ -105,7 +105,6 @@
 | OAuth2 JWT 이중화 | Sticky Session 구조의 한계 인지 → JWK DB 영속화로 무중단 배포 가능 구조 전환 |
 | OTA 상태 반영 지연 | EventBridge 폴링 구조 → MQTT 이벤트 드리븐으로 전환, 즉시 반영 |
 | CloudFront 캐시 미갱신 | 동일 파일명 교체 시 CDN 캐시 문제 → 타임스탬프 파일명 전략 적용 |
-| MariaDB JDBC 장애 | 버전업 후 prepared_stmt_count MAX 도달 → 파라미터 off 조치 |
 | 서버 파일시스템 과점유 | 고아 로그 원인 분석 → logrotate 전 서버 표준화 (93% → 46%) |
 
 > 상세한 분석과 해결 과정은 **[Tech Notes](https://tech-notes-nu.vercel.app)** 에 기록하고 있습니다.
