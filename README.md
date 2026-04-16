@@ -2,7 +2,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&duration=3000&pause=1000&color=888780&center=true&vCenter=true&width=435&lines=Publisher+%E2%86%92+Backend+%E2%86%92+Infrastructure" alt="typing" />
 
-# 심은영 · Eunyoung Sim
+# 심은영 · Eunyoung Shim
 
 <p>
   <a href="https://tech-notes-nu.vercel.app">
@@ -15,25 +15,25 @@
 
 </div>
 
----
+<br>
 
 > Publisher → Backend Developer → Infrastructure  
 > 화면부터 서버, AWS 인프라까지 서비스 전체 흐름을 직접 경험했습니다.  
-> 기능을 구현하기 전에 **"왜 필요한가"** 와 **"어디까지 영향이 가는가"** 를 먼저 묻는 게 습관입니다.<br>
+> 기능을 구현하기 전에 **"왜 필요한가"** 와 **"어디까지 영향이 가는가"** 를 먼저 묻는 게 습관입니다.
 
- `MSA 모듈 개발` `AWS 인프라 운영` `풀스택 경험`
+`MSA 모듈 개발` `AWS 인프라 운영` `풀스택 경험`
 
----
+<br>
 
-## Career
+## 💼 Career
 
-**커머스톤** · Backend Developer &nbsp;`2023.10 — present` &nbsp;<span style="color:#1D9E75">●</span>
+**커머스톤** · Backend Developer &nbsp;`2023.10 — present` <span style="color:#1D9E75">●</span>
 
 스텔스인터렉티브 · Publisher &nbsp;`2021.08 — 2023.02`
- 
----
 
-## Stack
+<br>
+
+## 🛠 Stack
 
 **Backend**
 
@@ -70,32 +70,32 @@
 ![MQTT](https://img.shields.io/badge/MQTT-3C5280?style=flat-square&logo=mqtt&logoColor=white)
 ![FCM](https://img.shields.io/badge/FCM-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 
----
+<br>
 
-## Certifications
+## 🪪 Certifications
 
-🪪 &nbsp;**정보처리기사** &nbsp;`2023.06` · 한국산업인력공단
+**정보처리기사** &nbsp;`2023.06` · 한국산업인력공단
 
-🪪 &nbsp;**리눅스마스터 2급** &nbsp;`2024.10` · 한국정보통신진흥협회
+**리눅스마스터 2급** &nbsp;`2024.10` · 한국정보통신진흥협회
 
-🪪 &nbsp;**SQL 개발자 (SQLD)** &nbsp;`2024.04` · 한국데이터산업진흥원
+**SQL 개발자 (SQLD)** &nbsp;`2024.04` · 한국데이터산업진흥원
 
-🪪 &nbsp;**웹디자인기능사** &nbsp;`2020.09` · 한국산업인력공단
+**웹디자인기능사** &nbsp;`2020.09` · 한국산업인력공단
 
----
+<br>
 
-## Project
+## 🚀 Project
 
 **IoT Platform MSA**
 
 스마트홈 IoT 플랫폼을 AWS 기반 MSA 구조로 전면 재설계한 프로젝트
 
-![Status](https://img.shields.io/badge/1.0-상용_운영_중-1D9E75?style=flat-square) 
+![Status](https://img.shields.io/badge/1.0-상용_운영_중-1D9E75?style=flat-square)
 ![Status](https://img.shields.io/badge/2.0-개발_완료-534AB7?style=flat-square)
 
----
+<br>
 
-## Problem Solving
+## 🔍 Problem Solving
 
 <table>
   <thead>
@@ -136,9 +136,9 @@
 
 > 상세한 분석과 해결 과정은 **[Tech Notes](https://tech-notes-nu.vercel.app)** 에 기록하고 있습니다.
 
----
+<br>
 
-## Tech Notes
+## 📝 Tech Notes
 
 [![Tech Notes](https://img.shields.io/badge/tech--notes--nu.vercel.app-FF69B4?style=for-the-badge&logo=vercel&logoColor=white)](https://tech-notes-nu.vercel.app)
 
