@@ -2,7 +2,7 @@
 
 # 안녕하세요, 심은영입니다
 
-### Backend Developer · IoT Platform · AWS Cloud
+### Publisher · Backend Developer · AWS Cloud
 
 [![Tech Blog](https://img.shields.io/badge/Tech%20Blog-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://tech-notes-nu.vercel.app)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:duddl4766@gmail.com)
