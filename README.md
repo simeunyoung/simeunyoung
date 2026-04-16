@@ -2,7 +2,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&duration=3000&pause=1000&color=888780&center=true&vCenter=true&width=435&lines=Publisher+%E2%86%92+Backend+%E2%86%92+Infrastructure" alt="typing" />
 
-# 심은영 · Eunyoung Shim
+# 심은영 · Eunyoung Sim
 
 <p>
   <a href="https://tech-notes-nu.vercel.app">
