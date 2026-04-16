@@ -73,14 +73,15 @@ Publisher → Backend Developer → Infrastructure
 
 ---
 
-## IoT Platform MSA
+## Project
 
+**IoT Platform MSA**
 > 스마트홈 IoT 플랫폼을 AWS 기반 MSA 구조로 전면 재설계한 프로젝트
 > 1.0 상용 운영 중 · 2.0 개발 완료 단계
 
 ---
 
-## Problem Solving Highlights
+**Problem Solving Highlights**
 
 | 구분 | 요약 |
 |------|------|
@@ -102,4 +103,6 @@ Publisher → Backend Developer → Infrastructure
 
 `spring-boot` `backend` `infra` `server` `troubleshooting` `git` `devops` `logging`
 
-
+## Career
+- 커머스톤 (Backend) 2023.10 ~
+- 스텔스인터렉티브 (Publisher) 2021.08 ~ 2023.02
