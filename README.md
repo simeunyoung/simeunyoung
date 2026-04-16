@@ -17,13 +17,11 @@
 
 ---
 
-```
-Publisher → Backend Developer → Infrastructure
-화면부터 서버, AWS 인프라까지 서비스 전체 흐름을 직접 경험했습니다.
-기능을 구현하기 전에 "왜 필요한가"와 "어디까지 영향이 가는가"를 먼저 묻는 게 습관입니다.
-```
+> Publisher → Backend Developer → Infrastructure  
+> 화면부터 서버, AWS 인프라까지 서비스 전체 흐름을 직접 경험했습니다.  
+> 기능을 구현하기 전에 **"왜 필요한가"** 와 **"어디까지 영향이 가는가"** 를 먼저 묻는 게 습관입니다.<br>
 
-`MSA 모듈 개발` `AWS 인프라 운영` `풀스택 경험`
+ `MSA 모듈 개발` `AWS 인프라 운영` `풀스택 경험`
 
 ---
 
@@ -92,7 +90,7 @@ Publisher → Backend Developer → Infrastructure
 
 스마트홈 IoT 플랫폼을 AWS 기반 MSA 구조로 전면 재설계한 프로젝트
 
-![Status](https://img.shields.io/badge/1.0-상용_운영_중-1D9E75?style=flat-square)
+![Status](https://img.shields.io/badge/1.0-상용_운영_중-1D9E75?style=flat-square) 
 ![Status](https://img.shields.io/badge/2.0-개발_완료-534AB7?style=flat-square)
 
 ---
