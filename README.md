@@ -2,11 +2,14 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=13&duration=3000&pause=1000&color=888780&center=true&vCenter=true&width=435&lines=Publisher+%E2%86%92+Backend+%E2%86%92+Infrastructure" alt="typing" />
 
-# 심은영 · Eunyoung Shim
+# 심은영 · Eunyoung Sim
 
 <p>
   <a href="https://tech-notes-nu.vercel.app">
-    <img src="https://img.shields.io/badge/Tech_Notes-FF69B4?style=flat-square&logo=vercel&logoColor=white" />
+    <img src="https://img.shields.io/badge/Tech_Notes-87CEEB?style=flat-square&logo=vercel&logoColor=white" />
+  </a>
+  <a href="https://simeunyoung-portfolio.vercel.app">
+    <img src="https://img.shields.io/badge/Portfolio-FF69B4?style=flat-square&logo=vercel&logoColor=white" />
   </a>
   <a href="mailto:duddl4766@gmail.com">
     <img src="https://img.shields.io/badge/duddl4766@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" />
