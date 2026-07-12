@@ -89,9 +89,9 @@
 
 ## 🚀 Project
 
-**IoT Platform MSA**
+**IoT Platform**
 
-스마트홈 IoT 플랫폼을 AWS 기반 MSA 구조로 전면 재설계한 프로젝트
+스마트홈 IoT 플랫폼을 AWS 기반으로, 모듈 단위로 분리한 구조로 재설계한 프로젝트
 
 ![Status](https://img.shields.io/badge/1.0-상용_운영_중-1D9E75?style=flat-square)
 ![Status](https://img.shields.io/badge/2.0-개발_완료-534AB7?style=flat-square)
@@ -110,9 +110,14 @@
   </thead>
   <tbody>
     <tr>
+      <td><code>IoT 디바이스 등록 지연/유실</code></td>
+      <td>HTTP 트리거 기반 MQTT 임시구독의 타이밍 레이스</td>
+      <td>MQTT 상시구독 + Shared Subscription 재설계</td>
+    </tr>
+    <tr>
       <td><code>EC2 부팅 실패</code></td>
       <td>Xen 하이퍼바이저 CONSOLE_EVTCHN 오류</td>
-      <td>t3(Nitro) 마이그레이션 권고</td>
+      <td>t3(Nitro) 마이그레이션</td>
     </tr>
     <tr>
       <td><code>OAuth2 JWT 이중화</code></td>
