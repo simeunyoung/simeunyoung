@@ -131,24 +131,32 @@
 
 ## 🔍 Problem Solving
 
-| 제목 | 내용 |
-|---|---|
-| IoT 디바이스 등록 지연/유실 | Cause — MQTT 임시구독 타이밍 레이스<br>Fix — 상시구독 + Shared Subscription 재설계 |
-| 인증 연동 문서-코드 불일치 우려 | Cause — 문서는 "확정"이나 실제 검증 안 됨<br>Fix — 콜백 코드 직접 검토, state 파라미터 부재 확인 |
-| OAuth2 JWT 이중화 | Cause — Sticky Session 구조의 한계<br>Fix — JWK DB 영속화 → 무중단 배포 |
-| "성공 로그 직후 롤백" 모순 | Cause — `@Transactional`+재시도 전파 규칙 충돌<br>Fix — DB 직접 조회 검증 후 트랜잭션 경계 재조정 |
-| EC2 부팅 실패 | Cause — Xen 하이퍼바이저 CONSOLE_EVTCHN 오류<br>Fix — t3(Nitro) 마이그레이션 |
-| OTA 상태 반영 지연 | Cause — EventBridge 폴링 구조<br>Fix — MQTT 이벤트 드리븐 전환, 즉시 반영 |
-| 파일시스템 과점유 (93%) | Cause — 근본원인은 담당자 규명, 본인은 즉시대응<br>Fix — 로그 정리+logrotate 표준화 직접 주도 |
+<table width="100%">
+  <colgroup><col width="30%"><col width="70%"></colgroup>
+  <thead><tr><th>제목</th><th>내용</th></tr></thead>
+  <tbody>
+    <tr><td>IoT 디바이스 등록 지연/유실</td><td>Cause — MQTT 임시구독 타이밍 레이스<br>Fix — 상시구독 + Shared Subscription 재설계</td></tr>
+    <tr><td>인증 연동 문서-코드 불일치 우려</td><td>Cause — 문서는 "확정"이나 실제 검증 안 됨<br>Fix — 콜백 코드 직접 검토, state 파라미터 부재 확인</td></tr>
+    <tr><td>OAuth2 JWT 이중화</td><td>Cause — Sticky Session 구조의 한계<br>Fix — JWK DB 영속화 → 무중단 배포</td></tr>
+    <tr><td>"성공 로그 직후 롤백" 모순</td><td>Cause — <code>@Transactional</code>+재시도 전파 규칙 충돌<br>Fix — DB 직접 조회 검증 후 트랜잭션 경계 재조정</td></tr>
+    <tr><td>EC2 부팅 실패</td><td>Cause — Xen 하이퍼바이저 CONSOLE_EVTCHN 오류<br>Fix — t3(Nitro) 마이그레이션</td></tr>
+    <tr><td>OTA 상태 반영 지연</td><td>Cause — EventBridge 폴링 구조<br>Fix — MQTT 이벤트 드리븐 전환, 즉시 반영</td></tr>
+    <tr><td>파일시스템 과점유 (93%)</td><td>Cause — 근본원인은 담당자 규명, 본인은 즉시대응<br>Fix — 로그 정리+logrotate 표준화 직접 주도</td></tr>
+  </tbody>
+</table>
 
 <br>
 
 ## 🛠 Initiative
 
-| 제목 | 내용 |
-|---|---|
-| Git 브랜치 전략 수립 | Before — 전략 부재로 배포 환경 혼선<br>After — 3-Tier + Conventional Commits, 팀 전파 |
-| 인증 서버 보안 고도화 | Before — `permitAll` 전체 허용<br>After — SecurityFilterChain 분리, PKCE 활성화 |
-| 로그 구조 표준화 | Before — 파편화된 로그로 장애 추적 어려움<br>After — MDC traceId 3계층 로깅, 4서비스×3환경 |
-| Systemd 전환 | Before — nohup 수동 실행, 수동 기동 필요<br>After — 자동 재시작 · Graceful Shutdown 보장 |
-| Logback 전환 | Before — logrotate로 표준화 예정이었음<br>After — 팀 논의 후 Logback 롤링으로 전환, 4개 서비스 적용 |
+<table width="100%">
+  <colgroup><col width="30%"><col width="70%"></colgroup>
+  <thead><tr><th>제목</th><th>내용</th></tr></thead>
+  <tbody>
+    <tr><td>Git 브랜치 전략 수립</td><td>Before — 전략 부재로 배포 환경 혼선<br>After — 3-Tier + Conventional Commits, 팀 전파</td></tr>
+    <tr><td>인증 서버 보안 고도화</td><td>Before — <code>permitAll</code> 전체 허용<br>After — SecurityFilterChain 분리, PKCE 활성화</td></tr>
+    <tr><td>로그 구조 표준화</td><td>Before — 파편화된 로그로 장애 추적 어려움<br>After — MDC traceId 3계층 로깅, 4서비스×3환경</td></tr>
+    <tr><td>Systemd 전환</td><td>Before — nohup 수동 실행, 수동 기동 필요<br>After — 자동 재시작 · Graceful Shutdown 보장</td></tr>
+    <tr><td>Logback 전환</td><td>Before — logrotate로 표준화 예정이었음<br>After — 팀 논의 후 Logback 롤링으로 전환, 4개 서비스 적용</td></tr>
+  </tbody>
+</table>
