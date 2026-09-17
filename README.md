@@ -24,10 +24,10 @@
 사람이 짠 코드든 AI가 만든 결과물이든, 동작 여부보다 원리를 먼저 봅니다.  
 화면부터 서버, 인프라까지 다뤄온 덕분에 문제가 어디서 생기든 끝까지 따라가 확인합니다.
 
-![검증 기반 문제해결](https://img.shields.io/badge/검증_기반_문제해결-808080?style=for-the-badge)
-![AWS 인프라 운영](https://img.shields.io/badge/AWS_인프라_운영-808080?style=for-the-badge)
-![인증/API 연동 설계](https://img.shields.io/badge/인증%2FAPI_연동_설계-808080?style=for-the-badge)
-![풀스택 경험](https://img.shields.io/badge/풀스택_경험-808080?style=for-the-badge)
+![검증 기반 문제해결](https://img.shields.io/badge/검증_기반_문제해결-534AB7?style=for-the-badge)
+![AWS 인프라 운영](https://img.shields.io/badge/AWS_인프라_운영-534AB7?style=for-the-badge)
+![인증/API 연동 설계](https://img.shields.io/badge/인증%2FAPI_연동_설계-534AB7?style=for-the-badge)
+![풀스택 경험](https://img.shields.io/badge/풀스택_경험-534AB7?style=for-the-badge)
 
 **Currently**
 
