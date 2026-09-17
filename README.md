@@ -6,13 +6,13 @@
 
 <p>
   <a href="https://tech-notes-nu.vercel.app">
-    <img src="https://img.shields.io/badge/Tech_Notes-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+    <img src="https://img.shields.io/badge/Tech_Notes-87CEEB?style=for-the-badge&logo=vercel&logoColor=white" />
   </a>
   <a href="https://simeunyoung-portfolio.vercel.app">
-    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+    <img src="https://img.shields.io/badge/Portfolio-FF69B4?style=for-the-badge&logo=vercel&logoColor=white" />
   </a>
   <a href="mailto:duddl4766@gmail.com">
-    <img src="https://img.shields.io/badge/duddl4766@gmail.com-000000?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/duddl4766@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
 </p>
 
@@ -47,40 +47,40 @@
 
 **Backend**
 
-![Java](https://img.shields.io/badge/Java_17-000000?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot_3.2-000000?style=for-the-badge&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security_6-000000?style=for-the-badge&logo=springsecurity&logoColor=white)
+![Java](https://img.shields.io/badge/Java_17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot_3.2-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security_6-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
 ![OAuth2](https://img.shields.io/badge/OAuth2.1_%2F_Authorization_Server-000000?style=for-the-badge)
-![Quartz](https://img.shields.io/badge/Quartz_Scheduler-000000?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white)
+![Quartz](https://img.shields.io/badge/Quartz_Scheduler-FF6B35?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 **Database**
 
-![MariaDB](https://img.shields.io/badge/MariaDB-000000?style=for-the-badge&logo=mariadb&logoColor=white)
-![JPA](https://img.shields.io/badge/JPA_Hibernate-000000?style=for-the-badge&logo=hibernate&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-000000?style=for-the-badge&logo=redis&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![JPA](https://img.shields.io/badge/JPA_Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 
 **AWS**
 
-![EC2](https://img.shields.io/badge/EC2-000000?style=for-the-badge&logo=amazonaws&logoColor=white)
-![RDS](https://img.shields.io/badge/RDS-000000?style=for-the-badge&logo=amazonaws&logoColor=white)
-![S3](https://img.shields.io/badge/S3-000000?style=for-the-badge&logo=amazons3&logoColor=white)
-![Lambda](https://img.shields.io/badge/Lambda-000000?style=for-the-badge&logo=awslambda&logoColor=white)
-![IoT Core](https://img.shields.io/badge/IoT_Core-000000?style=for-the-badge&logo=amazonaws&logoColor=white)
-![API Gateway](https://img.shields.io/badge/API_GW-000000?style=for-the-badge&logo=amazonaws&logoColor=white)
-![CloudWatch](https://img.shields.io/badge/CloudWatch-000000?style=for-the-badge&logo=amazonaws&logoColor=white)
-![CloudTrail](https://img.shields.io/badge/CloudTrail-000000?style=for-the-badge&logo=amazonaws&logoColor=white)
-![CloudFront](https://img.shields.io/badge/CloudFront-000000?style=for-the-badge&logo=amazonaws&logoColor=white)
-![IAM](https://img.shields.io/badge/IAM-000000?style=for-the-badge&logo=amazonaws&logoColor=white)
-![ALB](https://img.shields.io/badge/ALB-000000?style=for-the-badge&logo=amazonaws&logoColor=white)
-![EventBridge](https://img.shields.io/badge/EventBridge-000000?style=for-the-badge&logo=amazonaws&logoColor=white)
+![EC2](https://img.shields.io/badge/EC2-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![RDS](https://img.shields.io/badge/RDS-527FFF?style=for-the-badge&logo=amazonaws&logoColor=white)
+![S3](https://img.shields.io/badge/S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
+![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=for-the-badge&logo=awslambda&logoColor=white)
+![IoT Core](https://img.shields.io/badge/IoT_Core-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![API Gateway](https://img.shields.io/badge/API_GW-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white)
+![CloudWatch](https://img.shields.io/badge/CloudWatch-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white)
+![CloudTrail](https://img.shields.io/badge/CloudTrail-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![CloudFront](https://img.shields.io/badge/CloudFront-8C4FFF?style=for-the-badge&logo=amazonaws&logoColor=white)
+![IAM](https://img.shields.io/badge/IAM-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white)
+![ALB](https://img.shields.io/badge/ALB-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![EventBridge](https://img.shields.io/badge/EventBridge-FF4F8B?style=for-the-badge&logo=amazonaws&logoColor=white)
 
 **Infra & DevOps**
 
-![Linux](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white)
-![MQTT](https://img.shields.io/badge/MQTT-000000?style=for-the-badge&logo=mqtt&logoColor=white)
-![FCM](https://img.shields.io/badge/FCM-000000?style=for-the-badge&logo=firebase&logoColor=black)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![MQTT](https://img.shields.io/badge/MQTT-3C5280?style=for-the-badge&logo=mqtt&logoColor=white)
+![FCM](https://img.shields.io/badge/FCM-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
 <br>
 
@@ -104,8 +104,8 @@
 - 디바이스 등록/제어 흐름을 HTTP 폴링 → MQTT 상시구독으로 재설계
 - OAuth2 인증 서버(Authorization Server) 신규 구축, 무중단 배포 대응
 
-![Status](https://img.shields.io/badge/1.0-상용_운영_중-000000?style=for-the-badge)
-![Status](https://img.shields.io/badge/2.0-개발_완료-000000?style=for-the-badge)
+![Status](https://img.shields.io/badge/1.0-상용_운영_중-1D9E75?style=for-the-badge)
+![Status](https://img.shields.io/badge/2.0-개발_완료-534AB7?style=for-the-badge)
 
 **빅데이터분석포탈 (신규 서비스 · 진행 중, 기획 총괄 + 인프라)**
 
@@ -115,8 +115,8 @@
 - AWS S3·네트워크 인프라(보안그룹/ALB/API Gateway) 구성 항목 정리 및 점검, Self-hosted Runner 추가로 부족해진 개발서버 용량을 고객사 협의 후 EBS 증설로 해소
 - 요구사항정의서·PDF 도면·설계서를 필드 단위로 교차검증하는 방식으로 진행
 
-![Status](https://img.shields.io/badge/기획_및_설계-진행중-000000?style=for-the-badge)
-![Status](https://img.shields.io/badge/설계_문서_교차검증-습관화-000000?style=for-the-badge)
+![Status](https://img.shields.io/badge/기획_및_설계-진행중-534AB7?style=for-the-badge)
+![Status](https://img.shields.io/badge/설계_문서_교차검증-습관화-534AB7?style=for-the-badge)
 
 **OTA 코드사이닝 인프라**
 
@@ -125,7 +125,7 @@
 - AWS Signer 서명 프로파일, 버전 관리가 적용된 S3 버킷 구성
 - 파이프라인 전 단계(S3·Signer·IoT Job/Stream·CloudWatch)에 필요한 권한만 부여한 IAM 역할 설계
 
-![Status](https://img.shields.io/badge/코드사이닝_파이프라인-신규구축-000000?style=for-the-badge)
+![Status](https://img.shields.io/badge/코드사이닝_파이프라인-신규구축-1D9E75?style=for-the-badge)
 
 <br>
 
