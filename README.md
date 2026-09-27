@@ -153,7 +153,7 @@
   <colgroup><col width="30%"><col width="70%"></colgroup>
   <thead><tr><th>제목</th><th>내용</th></tr></thead>
   <tbody>
-    <tr><td>Git 브랜치 전략 수립</td><td>Before — 전략 부재로 배포 환경 혼선<br>After — 3-Tier + Conventional Commits, 팀 전파</td></tr>
+    <tr><td>Git 브랜치 전략 정착</td><td>Before — 3-Tier 정책은 있었지만 관리 부재로 안 지켜짐<br>After — 담당자로서 팀에 재전파, PR 검토로 실제 정착</td></tr>
     <tr><td>인증 서버 보안 고도화</td><td>Before — <code>permitAll</code> 전체 허용<br>After — SecurityFilterChain 분리, PKCE 활성화</td></tr>
     <tr><td>로그 구조 표준화</td><td>Before — 파편화된 로그로 장애 추적 어려움<br>After — MDC traceId 3계층 로깅, 4서비스×3환경</td></tr>
     <tr><td>Systemd 전환</td><td>Before — nohup 수동 실행, 수동 기동 필요<br>After — 자동 재시작 · Graceful Shutdown 보장</td></tr>
