@@ -102,7 +102,7 @@
 
 - 스마트홈 IoT 플랫폼을 AWS 기반 모듈형 구조로 재설계
 - 디바이스 등록/제어 흐름을 HTTP 폴링 → MQTT 상시구독으로 재설계
-- OAuth2 인증 서버(Authorization Server) 신규 구축, 무중단 배포 대응
+- OAuth2 인증 서버(Authorization Server) 인수 후 대부분 재작성, 무중단 배포 대응
 
 ![Status](https://img.shields.io/badge/1.0-상용_운영_중-1D9E75?style=for-the-badge)
 ![Status](https://img.shields.io/badge/2.0-개발_완료-534AB7?style=for-the-badge)
